@@ -9,7 +9,7 @@ $footer-background-color: $primary;
 $footer-title-color: #fff;
 $footer-text-color: #ffffff80;
 $footer-item-disc-color: $secondary;
-.footer-logo { filter: brightness(0) invert(1); }
+.footer-logo { filter: brightness(0) ; }
 
 // dashboard
 $dashboard-line-color-price: $secondary; // price left border
