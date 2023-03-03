@@ -66,6 +66,9 @@
         if (document.getElementById("top-navbar")) {
           document.getElementById("top-navbar").style.backgroundColor = "#282945";
         }
+        if (document.getElementById("navbar-logo")) {
+          document.getElementById("navbar-logo").style.filter = "brightness(0)";
+        }
         let modeChanger = document.getElementById("dark-mode-changer");
         if (modeChanger) {
           modeChanger.className += " " + "dark-mode-changer--dark";
@@ -297,6 +300,7 @@
     <script defer data-cfasync="false">
       if (localStorage.getItem("current-color-mode") === "dark") {
         document.getElementById("top-navbar").style.backgroundColor = "#0b1426";
+        document.getElementById("navbar-logo").style.filter = "brightness(0)";
         let modeChanger = document.getElementById("dark-mode-changer");
         modeChanger.className += " " + "dark-mode-changer--dark";
       }
